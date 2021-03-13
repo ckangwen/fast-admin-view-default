@@ -5,16 +5,17 @@
       "path": "/",
       "name": "dashboard",
       "title": "Dashboard",
-      "redirect": "/dashboard",
+      "redirect": "/dashboardIndex",
       "icon": "el-icon-s-promotion",
-      "viewPath": "dashboard",
+      "viewPath": "@/views/Dashboard/index.vue",
       "children": [
         {
-          "path": "dashboard",
-          "name": "dashboardIndex",
-          "title": "Dashboard",
-          "viewPath": "@/views/dashboard/index.vue",
-          "icon": "el-icon-s-promotion",
+          "path": "dashboardIndex",
+          "name": "DashboardIndex",
+          "icon": "el-icon-document",
+          "title": "DashboardIndex",
+          "viewPath": "@/views/Dashboard/DashboardIndex.vue",
+          "hidden": false,
           "children": []
         }
       ]

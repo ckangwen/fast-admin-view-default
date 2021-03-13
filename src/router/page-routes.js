@@ -3,7 +3,7 @@ const PAGE_ROUTES = [
   {
     path: '/',
     name: 'dashboard',
-    redirect: '/dashboard',
+    redirect: '/dashboardIndex',
     hidden: false,
     meta: {
       icon: 'el-icon-s-promotion',
@@ -12,25 +12,14 @@ const PAGE_ROUTES = [
     component: Layout,
     children: [
       {
-        path: 'dashboard',
-        name: 'dashboardIndex',
-        hidden: false,
-        meta: {
-          icon: 'el-icon-s-promotion',
-          title: 'Dashboard'
-        },
-        component: () => import('@/views/dashboard/index.vue'),
-        children: []
-      },
-      {
-        path: 'element',
-        name: 'element',
+        path: 'dashboardIndex',
+        name: 'DashboardIndex',
         hidden: false,
         meta: {
           icon: 'el-icon-document',
-          title: 'Element'
+          title: 'DashboardIndex'
         },
-        component: () => import('@/views/dashboard/element.vue'),
+        component: () => import('@/views/Dashboard/DashboardIndex.vue'),
         children: []
       }
     ]
