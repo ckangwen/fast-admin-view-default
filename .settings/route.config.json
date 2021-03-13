@@ -19,6 +19,43 @@
           "children": []
         }
       ]
+    },
+    {
+      "path": "/one",
+      "name": "One",
+      "icon": "el-icon-document",
+      "title": "一级菜单",
+      "viewPath": "@/views/One.vue",
+      "hidden": false,
+      "children": [
+        {
+          "path": "table",
+          "name": "Table",
+          "icon": "el-icon-document",
+          "title": "二级菜单",
+          "viewPath": "@/views/One/Table.vue",
+          "hidden": false,
+          "children": []
+        },
+        {
+          "path": "three",
+          "name": "Three",
+          "icon": "el-icon-document",
+          "title": "表单",
+          "viewPath": "@/views/One/Three.vue",
+          "hidden": false,
+          "children": []
+        },
+        {
+          "path": "four",
+          "name": "Four",
+          "icon": "el-icon-document",
+          "title": "新的页面",
+          "viewPath": "@/views/One/Four.vue",
+          "hidden": false,
+          "children": []
+        }
+      ]
     }
   ]
 }
